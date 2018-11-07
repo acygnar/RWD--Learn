@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Opis mojej strony">
+    <meta name="keywords" content="Tutaj słowa kluczowe oddzielone przecinkiem">
+    <meta name="viewport" content="width=device-width" , intial-scale="1.0" <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="#" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(e) {
+            var currentposition = $(document).scrollTop();
+            var bannerheight = $("#navbar").height();
+            if (currentposition > bannerheight) {
+                $("#navbar").addClass("opacitynav");
+            } else {
+                $("#navbar").removeClass("opacitynav");
+            }
+        });
+
+    </script>
+    <title>Responsive</title>
+</head>
+
+<body>
+    <header>
+       <div class="center-wrapper">
+        <nav class="main-nav">
+            <span class="open-slide" onClick="openSlideMenu">
+                <a href="#">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <script>
+                        const ico = document.querySelector('.burger');
+                        ico.addEventListener("click", function() {
+                            ico.classList.toggle("active");
+                        })
+
+                    </script>
+                </a>
+            </span>
+            <ul class="main-menu">
+                <li><a href="#skills">Technlogie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#about">Kim jestem?</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close">&times;</a>
+        <a href="#skills">Technlogie</a>
+        <a href="#projects">Projekty</a>
+        <a href="#about">Kim jestem?</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+    <section>
+    </section>
+    <footer>
+    </footer>
+    <script>
+        document.getElementById('slide-menu').style.width = '250px';
+
+    </script>
+</body>
+
+</html>
