@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Opis mojej strony">
+    <meta name="keywords" content="Tutaj słowa kluczowe oddzielone przecinkiem">
+    <meta name="viewport" content="width=device-width" , intial-scale="1.0" <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="#" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(e) {
+            var currentposition = $(document).scrollTop();
+            var bannerheight = $(".main-nav").height();
+            if (currentposition > bannerheight) {
+                $("header").addClass("opacity");
+            } else {
+                $("header").removeClass("opacity");
+            }
+        });
+
+    </script>
+    <title>Responsive</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+        </div>
+        <div class="center-wrapper">
+            <nav class="main-nav">
+                <span class="open-slide">
+                    <a href="#">
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <script>
+                            const ico = document.querySelector('.burger');
+                            ico.addEventListener("click", function() {
+                                ico.classList.toggle("active");
+                            })
+
+
+                            var slidemenu = document.querySelector('.burger');
+                            slidemenu.addEventListener("click", function() {
+                                var open = document.querySelector('.slide-nav hidden');
+                                open.classList.remove("hidden");
+
+                            })
+                            var closemenu = document.querySelector('.burger');
+                            closemenu.addEventListener("click", function() {
+                                var close = document.querySelector('.slide-nav');
+                                close.classList.toggle("hidden");
+                            })
+
+                        </script>
+                    </a>
+                </span>
+                <ul class="main-menu">
+                    <li><a href="#skills">Technologie</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#about">Kim jestem</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav id="slide-menu" class="slide-nav hidden">
+        <ul>
+            <li><a href="#skills">Technologie</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#about">Kim jestem</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <section class="baner">
+        <img src="img/baner.png" alt="Baner" title="Baner" />
+    </section>
+    <section>
+        <article>
+            <p>"Behavior test But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+            <p>"Behavior test But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+            <p>"Behavior test But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+            <p>"Behavior test But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+        </article>
+    </section>
+    <section class="technology">
+    <div class="slider">
+        <img id="slide" src="img/views1.jpg" alt"slide">
+        <script>
+             var images = [
+    'img/views1.jpg', 
+    'img/views2.jpg', 
+    'img/views1.jpg'
+];
+var num = 0;
+function next() {
+    var slider = document.getElementById('slide');
+    num++;
+    if(num >= images.length) {
+        num = 0;
+    }
+    slider.src = images[num];
+}
+function prev() {
+    var slider = document.getElementById('slide');
+    num--;
+    if(num < 0) {
+        num = images.length-1;
+    }
+    slider.src = images[num];
+}
+        </script>
+    </div>
+    </section>
+    <footer>
+    </footer>
+</body>
+
+</html>
