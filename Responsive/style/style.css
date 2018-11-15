@@ -177,9 +177,7 @@ header {
 
 
 
-.technology{
-    
-}
+
 .slider{
     width: 100%;
     text-align: center;
@@ -192,6 +190,11 @@ header {
     margin top: 35px;
     margin-bottom: 5px;
 }
+.technology .buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .technology .button{
   background-color:#384466;
   width:100px;
@@ -203,14 +206,14 @@ header {
   float: left;
   margin-bottom: 10px;
   text-align: center;
- }
+  }
 .technology .button:hover{
   background-color: #386655;
   transition: 0.5s ease-out;
   cursor: pointer;
  }
 
-.githubBtn a {
+.technology .githubBtn a {
     background-color: #384466;
     line-height: 40px;
     width: 180px;
@@ -224,7 +227,7 @@ header {
     text-decoration: none;
     float: left;
 }
-.githubBtn a:hover {
+.technology .githubBtn a:hover {
     background-color: #386655;
     transition: 0.5s ease;
 }
