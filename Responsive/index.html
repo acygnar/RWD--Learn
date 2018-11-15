@@ -6,21 +6,10 @@
     <meta name="description" content="Opis mojej strony">
     <meta name="keywords" content="Tutaj słowa kluczowe oddzielone przecinkiem">
     <meta name="viewport" content="width=device-width" , intial-scale="1.0" <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
     <link rel="icon" href="#" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(window).scroll(function(e) {
-            var currentposition = $(document).scrollTop();
-            var bannerheight = $(".main-nav").height();
-            if (currentposition > bannerheight) {
-                $("header").addClass("opacity");
-            } else {
-                $("header").removeClass("opacity");
-            }
-        });
-
-    </script>
+    <script src="script/js-script.js"></script>
     <title>Responsive</title>
 </head>
 
@@ -88,36 +77,16 @@
         </article>
     </section>
     <section class="technology">
-    <div class="slider">
-        <img id="slide" src="img/views1.jpg" alt"slide">
-        <script>
-             var images = [
-    'img/views1.jpg', 
-    'img/views2.jpg', 
-    'img/views1.jpg'
-];
-var num = 0;
-function next() {
-    var slider = document.getElementById('slide');
-    num++;
-    if(num >= images.length) {
-        num = 0;
-    }
-    slider.src = images[num];
-}
-function prev() {
-    var slider = document.getElementById('slide');
-    num--;
-    if(num < 0) {
-        num = images.length-1;
-    }
-    slider.src = images[num];
-}
-        </script>
-    </div>
+        <div class="slider">
+            <img id="slide" src="img/views1.jpg"/>
+            </div>
+        <div class="button" onclick="next()"><p>Poprzedni</p></div>
+        <div class="githubBtn">
+            <a href="https://github.com/acygnar">GitHub</a>
+        </div>
+        <div class="button" href="#" onclick="next()">Następny</div>
     </section>
     <footer>
     </footer>
 </body>
-
 </html>
