@@ -8,6 +8,9 @@
 html {
     scroll-behavior: smooth;
 }
+.main{
+    width:100%;
+}
 
 .center wrapper {
     width: 100%;
@@ -119,9 +122,9 @@ header {
         display: none;
     }
 
-    .baner {
+    /*.baner {
         display: none;
-    }
+    }*/
 }
 /****** MEDIA QUERY END ******/
 .hidden {
@@ -195,8 +198,8 @@ margin-left: 2%;
 .slider img {
     margin-right:10px;
     margin-left:10px;
-    width:640px;
-    height:400px;
+    width:60%;
+    height:20%;
     margin top: 35px;
     margin-bottom: 5px;
 }
