@@ -130,11 +130,16 @@ header {
 }
 
 .slide-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     background-color: #384466;
-    height: auto;
-    width: 100%;
-    float: left;
-    z-index: 999;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
 .slide-nav ul {
@@ -172,12 +177,22 @@ header {
 .baner img {
     width: 100%;
 }
-
-
-
-
-
-
+.technology{
+    width: 100%;
+    height:auto;
+}
+.technology .skill{
+    width:50%;
+    float: left;
+    text-align: center;
+    
+}
+.technology .skillSql{
+    width:100%;
+    float: left;
+    text-align: center;
+    
+}
 
 .projects{
     padding-bottom: 30px;
@@ -276,6 +291,50 @@ margin-left: 2%;
 }
 .contact a{
     text-decoration: none;
+}
+.contact p{
+    width: 50%;
+}
+.contact h2{
+    width: 50%;
+}
+.contact form{
+    float:right;
+    margin-right: 20%;
+    
+}
+.contact input{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+.contact input[type=text],[type=email]{
+    border:1px solid #fff;
+    height: 40px;
+    margin-top: 5px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 0 0 0 8px
+   
+}
+
+.contact input[type=submit]{
+    margin-top: 10px;
+    height: 30px;
+    width:100px;
+    border-radius: 8px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    background-color:#665838;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+.contact input[type=submit]:hover{
+    background-color: #998454;
 }
 footer{
     background-color: #2C2E4A;

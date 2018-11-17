@@ -11,6 +11,14 @@
     
 })();
 
+function openNav(){
+    document.querySelector('.slide-nav').style.width= "250px";
+    }
+
+function closeNav(){
+    document.querySelector('.slide-nav').style.width= "0";
+}
+
 
 
 var images = [
@@ -21,7 +29,7 @@ var images = [
             var num = 0;
 
             function next() {
-                var slider = document.getElementById('slide');
+                var slider = document.querySelector('.slide');
                 num++;
                 if (num >= images.length) {
                     num = 0;
@@ -30,7 +38,7 @@ var images = [
             }
 
             function prev() {
-                var slider = document.getElementById('slide');
+                var slider = document.querySelector('.slide');
                 num--;
                 if (num < 0) {
                     num = images.length - 1;
