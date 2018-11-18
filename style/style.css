@@ -10,6 +10,7 @@ html {
 }
 .main{
     width:100%;
+    margin: auto;
 }
 
 .center wrapper {

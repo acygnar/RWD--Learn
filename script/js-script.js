@@ -10,14 +10,22 @@
         });
     
 })();
+    
 
 function openNav(){
-    document.querySelector('.slide-nav').style.width= "250px";
-    }
+    
+    document.querySelector('.slide-nav').style.width= "200px";
+    const button=document.querySelector('.burger');
+    
+    button.addEventListener('click',openNav,false);
+    button.addEventListener('click',closeNav,false); 
+   }
 
 function closeNav(){
     document.querySelector('.slide-nav').style.width= "0";
 }
+
+
 
 
 
