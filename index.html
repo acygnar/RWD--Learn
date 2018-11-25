@@ -19,15 +19,21 @@
         <div class="center-wrapper">
             <nav class="main-nav">
                 <span class="open-slide">
-                    <div class="burger" onclick="openNav()">
+                    <div class="burger">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
                         <script>
-                            const ico = document.querySelector('.burger');
-                            ico.addEventListener("click", function() {
-                                ico.classList.toggle("active");
+                          $(".burger").click(function() {
+                              if ($('.burger').hasClass('active')) {
+                                $('.burger').removeClass('active');
+                                $('.slide-nav').removeClass('open');
+
+                              } else {
+                                $('.burger').addClass('active');
+                                $('.slide-nav').addClass('open');
+                              }
                             })
                         </script>
                    </span>

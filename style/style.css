@@ -10,7 +10,7 @@ html {
 }
 .main{
     width:100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .center wrapper {
@@ -141,6 +141,10 @@ header {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+}
+
+.open{
+    width:200px;
 }
 
 .slide-nav ul {
