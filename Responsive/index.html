@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Opis mojej strony">
@@ -12,87 +11,119 @@
     <script src="script/js-script.js"></script>
     <title>Responsive</title>
 </head>
-
 <body>
+   <section class="main">
     <header>
         <div class="logo">
         </div>
         <div class="center-wrapper">
             <nav class="main-nav">
                 <span class="open-slide">
-                    <a href="#">
-                        <div class="burger">
+                    <div class="burger">
                             <span></span>
                             <span></span>
                             <span></span>
                         </div>
                         <script>
-                            const ico = document.querySelector('.burger');
-                            ico.addEventListener("click", function() {
-                                ico.classList.toggle("active");
+                          $(".burger").click(function() {
+                              if ($('.burger').hasClass('active')) {
+                                $('.burger').removeClass('active');
+                                $('.slide-nav').removeClass('open');
+
+                              } else {
+                                $('.burger').addClass('active');
+                                $('.slide-nav').addClass('open');
+                              }
                             })
-
-
-                            var slidemenu = document.querySelector('.burger');
-                            slidemenu.addEventListener("click", function() {
-                                var open = document.querySelector('.slide-nav hidden');
-                                open.classList.remove("hidden");
-
-                            })
-                            var closemenu = document.querySelector('.burger');
-                            closemenu.addEventListener("click", function() {
-                                var close = document.querySelector('.slide-nav');
-                                close.classList.toggle("hidden");
-                            })
-
                         </script>
-                    </a>
-                </span>
+                   </span>
                 <ul class="main-menu">
-                    <li><a href="#skills">Technologie</a></li>
+                    <li><a href="#technology">Technologie</a></li>
                     <li><a href="#projects">Projekty</a></li>
                     <li><a href="#about">Kim jestem</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
-    <nav id="slide-menu" class="slide-nav hidden">
+            <nav id="slide-menu" class="slide-nav">
         <ul>
-            <li><a href="#skills">Technologie</a></li>
+            <li><a href="#technology">Technologie</a></li>
             <li><a href="#projects">Projekty</a></li>
             <li><a href="#about">Kim jestem</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
+        </div>
+    </header>
+    <!-- tu było menu slide-->
     <section class="baner">
         <img src="img/baner.png" alt="Baner" title="Baner" />
     </section>
-    <section>
-        <article>
-            <p>"Behavior test But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-            <p>"Behavior test But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-            <p>"Behavior test But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-            <p>"Behavior test But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-        </article>
-    </section>
+    <a name="technology"></a>
     <section class="technology">
+        <article>
+            <div class="skill">
+                <img src="img/HTML5.png">
+                <p>Tekst o HTML</p>
+            </div>
+            <div class="skill">
+                <img src="img/CSS3.png">
+                <p>Tekst o CSS</p>
+            </div>
+            <div class="skill">
+                <img src="img/CSHARP.png">
+                <p>Tekst o C#</p>
+                </div>
+                <div class="skill">
+                <img src="img/JAVASCRIPT.png">
+                <p>javascript</p>
+            </div>
+               <div class="skillSql">
+                <img src="img/SQL.png">
+                <p>sql</p>
+            </div>
+            </article>
+    </section>
+    <a name="projects"></a>
+    <section class="projects">
+       <h1>Projekty</h1>
         <div class="slider">
-            <img id="slide" src="img/views1.jpg"/>
+            <img class="slide" src="img/views1.jpg"/>
             </div>
             <div class="buttons">
-        <div class="button" onclick="next()">
+        <div class="buttonPrev" onclick="prev()">
         <p>Poprzedni</p>
         </div>
         <div class="githubBtn">
             <a href="https://github.com/acygnar">GitHub</a>
         </div>
-        <div class="button" onclick="next()">
+        <div class="buttonNext" onclick="next()">
         <p>Następny<p>
         </div>
         </div>
     </section>
+      <a name="about"></a>
+       <section class="about">
+           <img src="img/me.jpg">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+       </section>
+    <a name="contact"></a>
+    <section class="contact">
+            <h2>Kontakt:</h2>
+            <p>792 333 814</p>
+            <p>adrian.cygnar@gmail.com<p>
+                <a href="https://www.linkedin.com/in/adrian-cygnar-2b8522163">LinkedIn</a>
+                <form>
+                    <lable>Napisz do mnie</lable>
+                <input type="text" name="name" required="" placeholder="Imię"/>
+                <input type="text" name="surname" required="" placeholder="Nazwisko"/>
+                <input type="email" name="email" required="" placeholder="Adres email"/>
+                <input type="text" name="message" required="" placeholder="Wiadomość"/>
+                <input type="submit" name="send" value="Wyślij"/>
+                </form>
+            </section>
     <footer>
+    <p>Zaprojektowane przez Adrian Cygnar</p>
     </footer>
+    </section>
 </body>
 </html>
