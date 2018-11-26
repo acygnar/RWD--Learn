@@ -10,8 +10,7 @@ html {
 }
 .main{
     width:100%;
-    margin: 0 auto;
-}
+    }
 
 .center wrapper {
     width: 100%;
@@ -83,7 +82,7 @@ header {
     }
 
     .burger span {
-        background-color: #355259;
+        background-color: black;
         position: absolute;
         height: 10px;
         width: 100%;
@@ -124,6 +123,12 @@ header {
     /*.baner {
         display: none;
     }*/
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow:hidden;
+    }
 }
 /****** MEDIA QUERY END ******/
 .hidden {
