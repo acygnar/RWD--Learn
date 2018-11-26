@@ -189,6 +189,7 @@ header {
 }
 .technology{
     width: 100%;
+    padding-top: 5%;
     height:auto;
 }
 .technology .skill{
@@ -203,7 +204,10 @@ header {
     text-align: center;
     
 }
-
+.technology p{
+    text-align: justify;
+    margin: 2% 20% 2% 20%;
+}
 .projects{
     padding-bottom: 30px;
     padding-top: 30px;
@@ -290,6 +294,22 @@ margin-left: 2%;
     background-color: #386655;
     transition: 0.5s ease;
 }
+.about{
+    width: 100%;
+}
+.about img{
+    float:left;
+    
+}
+.about p{
+    padding: 0 20% 40px 20%;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: lato;
+    
+}
+
 .contact{
     background-color: #252133;
     padding-top: 20px;
