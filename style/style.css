@@ -8,13 +8,13 @@
 html {
     scroll-behavior: smooth;
 }
-.main{
-    width:100%;
-    }
+
+.main {
+    width: 100%;
+}
 
 .center wrapper {
     width: 100%;
-    /*max-width:ile?;*/
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -60,7 +60,8 @@ header {
     cursor: pointer;
     transition: 1s ease;
 }
-.opacity{
+
+.opacity {
     opacity: 0.8;
 }
 
@@ -120,16 +121,14 @@ header {
     .main-menu {
         display: none;
     }
-    /*.baner {
-        display: none;
-    }*/
-    .main{
+
+    .main {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        overflow:hidden;
     }
 }
+
 /****** MEDIA QUERY END ******/
 .hidden {
     display: none;
@@ -148,8 +147,8 @@ header {
     padding-top: 60px;
 }
 
-.open{
-    width:200px;
+.open {
+    width: 200px;
 }
 
 .slide-nav ul {
@@ -172,8 +171,9 @@ header {
     margin-top: 10px;
 
 }
-@media(max-width:380px){
-    .slide-nav li a{
+
+@media(max-width:380px) {
+    .slide-nav li a {
         font-size: 12px;
     }
 }
@@ -187,94 +187,97 @@ header {
 .baner img {
     width: 100%;
 }
-.technology{
+
+.technology {
     width: 100%;
     padding-top: 5%;
-    height:auto;
+    height: auto;
+
 }
-.technology .skill{
-    width:50%;
+
+.technology .skill {
+    width: 50%;
     float: left;
     text-align: center;
-    
+
 }
-.technology .skillSql{
-    width:100%;
+
+.technology .skillSql {
+    width: 100%;
     float: left;
     text-align: center;
-    
+
 }
-.technology p{
+
+.technology p {
     text-align: justify;
     margin: 2% 20% 2% 20%;
+    font-size: 16px;
+    font-weight: 400;
+
 }
-.projects{
+
+.projects {
     padding-bottom: 30px;
     padding-top: 30px;
     width: 100%;
     color: white;
 }
-.projects h1{
-margin-left: 2%;  
+
+.projects h1 {
+    margin-left: 2%;
 }
-.slider{
+
+.slider {
     width: 100%;
     text-align: center;
 }
+
 .slider img {
-    margin-right:10px;
-    margin-left:10px;
-    width:640px;
-    height:400px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 640px;
+    height: 400px;
     margin top: 35px;
     margin-bottom: 5px;
 }
-@media(max-width:690px){
-    .slider img{
-        width:60%;
-        height:20%;
+
+@media(max-width:690px) {
+    .slider img {
+        width: 60%;
+        height: 20%;
     }
 }
-.projects .buttons{
+
+.projects {
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects .buttons {
     display: flex;
     justify-content: center;
     width: 100%;
 }
-.projects .buttonPrev{
-  background-color:#384466;
-  width:100px;
-  height:30px;
-  color:white;
-  text-decoration:none;
-  padding:10px;
-  border-radius:10px;
-  float: left;
-  margin-bottom: 10px;
-  text-align: center;
-  line-height: 13px;
-  margin-right: 10px;    
-  
-  }
-.projects .buttonNext{
-  background-color:#384466;
-  width:100px;
-  height:30px;
-  color:white;
-  text-decoration:none;
-  padding:10px;
-  border-radius:10px;
-  float: left;
-  margin-bottom: 10px;
-  text-align: center;
-  line-height: 13px;
-  margin-left: 10px;
-  
-  }
-.projects .buttonPrev:hover,.buttonNext:hover{
-  background-color: #386655;
-  transition: 0.5s ease-out;
-  cursor: pointer;
- }
+
+.projects .buttonPrev {
+    margin-right: 3%;
+    float: left;
+}
+
+.projects .buttonNext {
+    margin-left: 3%;
+    float: left;
+}
+
+.projects .buttonPrev img:hover,
+.buttonNext img:hover {
+    -webkit-filter: opacity(30%);
+    filter: opacity(60%);
+    transition: 0.9s ease-out;
+    transform: scale(1.2);
+    cursor: pointer;
+}
 
 .projects .githubBtn a {
     background-color: #384466;
@@ -290,89 +293,107 @@ margin-left: 2%;
     text-decoration: none;
     float: left;
 }
+
 .projects .githubBtn a:hover {
     background-color: #386655;
     transition: 0.5s ease;
 }
-.about{
+
+.about {
     width: 100%;
 }
-.about img{
-    float:left;
-    
+
+.about img {
+    float: left;
+
 }
-.about p{
-    padding: 0 20% 40px 20%;
+
+.about p {
+    padding: 0 20% 40px 0;
     text-align: justify;
     font-size: 20px;
     font-weight: 300;
     font-family: lato;
-    
+
 }
 
-.contact{
+.contact {
     background-color: #252133;
     padding-top: 20px;
     padding-left: 2%;
     color: white;
     font-family: lato;
     width: 100%;
-    height:400px;
+    height: 400px;
+    overflow: hidden;
 }
-.contact a{
+
+.contact a {
     text-decoration: none;
 }
-.contact p{
+
+.contact p {
     width: 50%;
 }
-.contact h2{
+
+.contact h2 {
+
     width: 50%;
 }
-.contact form{
-    float:right;
+
+.contact form {
+    float: right;
     margin-right: 20%;
-    
+
 }
-.contact input{
+
+.contact input {
     display: flex;
     justify-content: center;
     width: 100%;
-    
-    
+
+
 }
-.contact input[type=text],[type=email]{
-    border:1px solid #fff;
+
+.contact input[type=text],
+[type=email] {
+    border: 1px solid #fff;
     height: 40px;
     margin-top: 5px;
     width: 300px;
     border-radius: 5px;
     padding: 0 0 0 8px
-   
 }
 
-.contact input[type=submit]{
+.contact input[type=submit] {
     margin-top: 10px;
     height: 30px;
-    width:100px;
+    width: 100px;
     border-radius: 8px;
     border: none;
     float: right;
     cursor: pointer;
-    background-color:#665838;
+    background-color: #665838;
     text-transform: uppercase;
     font-weight: 600;
-    
+
 }
-.contact input[type=submit]:hover{
+
+.contact input[type=submit]:hover {
     background-color: #998454;
 }
-footer{
+
+.contact lable {
+    margin-left: 1%;
+}
+
+footer {
     background-color: #2C2E4A;
-    height:40px;
+    height: 40px;
     text-align: center;
     line-height: 40px;
     color: white;
     font-family: lato;
-    
-    
+
+
 }
