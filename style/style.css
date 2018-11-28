@@ -328,8 +328,10 @@ header {
     overflow: hidden;
 }
 
-.contact a {
-    text-decoration: none;
+.contact img:hover {
+    transform:scale(1.1);    
+    transform:rotate(10deg);
+    transition: 1s ease;
 }
 
 .contact p {
@@ -343,7 +345,7 @@ header {
 
 .contact form {
     float: right;
-    margin-right: 20%;
+    margin-right: 50px;
 
 }
 
@@ -384,7 +386,7 @@ header {
 }
 
 .contact lable {
-    margin-left: 1%;
+    margin-left: 4%;
 }
 
 footer {
